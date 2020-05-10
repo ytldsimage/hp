@@ -1,5 +1,6 @@
-```csharp
-![logo](https://docsify.js.org/_media/icon.svg)
+
+
+![logo](http://www.ifread.com/img/25f474a89d94a2ea08902718491e5fa4/ifread.png)
 
 # 豆瓣影音
 
@@ -11,4 +12,3 @@
 
 [GitHub](https://github.com/Hanxueqing/Douban-Movie.git)
 [Get Started](#quick-start)
-```
