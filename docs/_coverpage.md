@@ -2,13 +2,13 @@
 
 ![logo](http://www.ifread.com/img/25f474a89d94a2ea08902718491e5fa4/ifread.png)
 
-# 豆瓣影音
+# StaticSpace
 
-> 使用Vue全家桶+Node.js搭建的小型全栈项目.
+> ### My Index Space for personal collections.
 
-* 前端框架：vue-cli、vue-router、axios、vuex
-* UI类库：Mint-UI、Vant
-* 后端数据接口：Express、MongoDB
+* **公开课笔记**
+* **Wiki工作文档**
+* **资源链接索引**
 
-[GitHub](https://github.com/Hanxueqing/Douban-Movie.git)
+[GitHub](https://github.com/ytldsimage/hp.git)
 [Get Started](#quick-start)
