@@ -1,5 +1,6 @@
 <!-- docs/_sidebar.md --> 
 
-* [首页](2) 
-* [指南](2)
+* [HomePage](https://github.twty.net)
+* [Product Development and Design](https://pdd.twty.net) 
+* [Signal & System Analysis](https://ssa.twty.net)
 
