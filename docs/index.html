@@ -23,23 +23,86 @@
 ```xml
 <script>
     window.$docsify = {
-      name: 'StaticSpace',
-      repo: 'https://github.com/ytldsimage/hp.git',
-      coverpage: true,
   
+      name: 'StaticSpace',
+//点击文档标题后跳转的链接地址。
+ // nameLink: '/',
+  // 按照路由切换
+//  nameLink: {  '/zh-cn/': '/zh-cn/',   '/': '/',  },
+  // logo: 'http://www.ifread.com/img/25f474a89d94a2ea08902718491e5fa4/ifread.png',
+  
+  
+  //切换页面后是否自动跳转到页面顶部。
+  		auto2top: true,
+  // 启用相对路径
+  relativePath: true,
+      
+   //配置仓库地址或者 username/repo 的字符串，会在页面右上角渲染一个 GitHub Corner 挂件。
+      repo: 'https://github.com/ytldsimage/hp.git', 
+   //docsify 初始化的挂载元素，可以是一个 CSS 选择器，默认为 #app 如果不存在就直接绑定在 body 上。
+      el: '#app', 
+  //默认情况下会抓取文档中所有标题渲染成目录，可配置最大支持渲染的标题层级。
+ 	    maxLevel: 5,
+
+  //自定义侧边栏后默认不会再生成目录，你也可以通过设置生成目录的最大层级开启这个功能。
+      subMaxLevel: 5,
+  
+  //加载自定义导航栏，参考定制导航栏 了解用法。设置为 true 后会加载 _navbar.md 文件，也可以自定义加载的文件名。
       // 加载 _navbar.md
       loadNavbar: true,
-
+  //同时设置 loadSidebar 和 autoHeader 后，可以根据 _sidebar.md 的内容自动为每个页面增加标题
+  autoHeader: true,
       // 加载 nav.md
       // loadNavbar: 'nav.md',
   
+  
+  //加载自定义侧边栏，参考多页文档。设置为 true 后会加载 _sidebar.md 文件，也可以自定义加载的文件名。
       // 加载 _sidebar.md
       loadSidebar: true,
-
       // 加载 summary.md
-      loadSidebar: '_sidebar.md',
-    }
+      //loadSidebar: '_sidebar.md',
+   
+  
+  
+  // 入口文件改为 /home.md
+  //homepage: 'home.md',
+  // 文档和仓库根目录下的 README.md 内容一致
+  //homepage:   'https://raw.githubusercontent.com/docsifyjs/docsify/master/README.md',
   	
+  
+//  启用封面页。开启后是加载 _coverpage.md 文件，也可以自定义文件名。
+ coverpage: true,
+  
+
+  // 自定义文件名
+  //coverpage: 'cover.md',
+
+  // 多个封面页
+  //coverpage: ['/', '/zh-cn/'],
+
+  // 多个封面页，并指定文件名
+  //coverpage: {  '/': 'cover.md',  '/zh-cn/': 'cover.md',  },
+  
+  
+  
+  notFoundPage: true,
+  
+  
+//我们可以通过 {docsify-updated} 变量显示文档更新日期. 并且通过 formatUpdated配置日期格式。参考 https://github.com/lukeed/tinydate#patterns
+  
+  formatUpdated: '{MM}/{DD} {HH}:{mm}',
+
+  formatUpdated: function(time) {
+    // ...
+
+    return time;
+  },
+  
+  
+  
+  
+  
+   }
   </script>
 
 
